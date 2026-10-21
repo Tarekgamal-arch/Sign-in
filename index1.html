@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .sign {
+            padding: 10px;
+        background : rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        margin: 10px;
+        box-sizing: border-box;
+        width: 50%;
+        border-radius: 30px;
+        border: 1px solid rgba(255,255 ,255 ,0.3);
+        box-shadow: 0 8px 25px rgba(0 ,  0 . 0 , 0.12);
+        justify-content: center;
+        width: fit-content; 
+}
+        .b {
+            border-radius: 10px;
+        font-size: 20px;
+                    padding: 5px 10px;
+                    color: white;
+                    background: black;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;          
+        }
+        form {
+            width: fit-content;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .i {
+            font-weight: bold;
+            font-style: normal;
+            color: #ddebff
+        }
+        body {
+            background: linear-gradient(135deg ,#0f172a , #312e81, #6d28d9);
+        backdrop-filter: blur(12px);
+        
+        justify-content: center;
+        display: flex;
+        
+        min-height: 100hv;
+        background-attachment: fixed;
+        }
+        .tit {
+            margin-bottom: 15px;
+            color: white    ;
+        }
+    </style>
+    <body>
+        <div class="sign">
+            <h1 class="tit">Knowledge library sign in</h1>
+
+            <form>
+                <label class="i">Username</label>
+                <input class="b" type="username" placeholder="Type your name">
+                <br>
+                <br>
+                <label class="i">password </label>
+                <input class="b" type="password" placeholder="type your password">
+                <br>
+                <br>    
+                <label class="i">Save Password</label>
+                <input class="b" type="checkbox">
+                <br>
+                <input class="b" type="button" value="Sign up" onclick="window.location.href='library.html'">
+            </form>
+    </body>
+</head>
