@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+    <title>bookstore</title>
+    <meta charset="utf-8">
+    <meta description content="this is a bookstore for selling high quality books">
+    <style> 
+    h1 {
+        font-style: inherit ;
+        text-align: center  ;
+        color: bisque;
+    }
+    #search-box {
+  margin: 20px 0;
+  text-align: center; 
+    }
+    #search {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+    .box{
+        padding: 10px;
+        background : rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+
+        margin: 10px;
+        box-sizing: border-box;
+        width: 50%;
+        border-radius: 30px;
+        border: 1px solid rgba(255,255 ,255 ,0.3);
+        box-shadow: 0 8px 25px rgba(0 ,  0 . 0 , 0.12);
+        justify-content: center;
+        width: fit-content;
+        
+        
+       
+        ;
+    }
+    p {
+        font-weight: bold;
+    }
+    .btn {
+        background-color:greenyellow;
+        border-radius: 10px;
+        font-size: 20px;
+                    padding: 5px 10px;
+                    color: white;
+                    background: #667eea;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                 }
+    button {
+        border-radius: 10px;
+        font-size: 20px;
+                    padding: 5px 10px;
+                    color: white;
+                    background: #667eea;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+        
+    }
+    .psyc {
+        height: 276px;
+        width:  auto;
+    }
+    body {
+        background: linear-gradient(135deg ,#0f172a , #312e81, #6d28d9);
+        backdrop-filter: blur(12px);
+    }
+    .s {
+        height: 276px;
+        width: auto;
+        border-radius: 10px;
+    }
+    .f {
+        color: #e8d5c4;
+        font-size: 25px;
+    }
+    .f1 {
+        text-align: center;
+        font-style: italic;
+    }
+    </style>
+    <script>
+        const search = document.getElementById("search");
+
+search.addEventListener("input", function () {
+  document.querySelectorAll(".box").forEach(box => {
+    box.style.display = box.innerText
+      .toLowerCase()
+      .includes(this.value.toLowerCase())
+      ? "block"
+      : "none";
+  });
+});
+    </script>
+    <body>
+<h1>Knowledge library</h1>
+<div class = "search-box">
+    <input type="text" id="search"placeholder="search for a book....">
+</div>
+<hr>
+<hr>
+<hr>
+<br>
+
+        <div class="box">
+            <h2>Atomic habits</h2>
+           <p><sup>A</sup>bout  ;
+            Atomic Habits by james clear is a self-development book that focuses on building god habits and breaking bad ones 
+        </p> 
+        <img src="ab.png" alt="Atomic Habits" title="book cover">
+        <br>
+        <br>
+        <button class="btn"onclick="window.open('Atomic habits ( PDFDrive ).pdf', '_blank')">Download book</button>
+        </div>
+        <div class="box">
+            <h2>Psychology of money</h2>
+            <p>the psychology of money is a book by morgan housel that explores how people think about money and make financial decisions</p>
+            <img class="s" src="images (3).png">
+            <br>
+            <br>
+            <button class="btn"onclick="window.open('The Psychology of Money.pdf', '_blank')">Download book</button>
+        </div>
+        <div class="box">
+            <h2>Same as ever</h2>
+            <p> Same as Ever is a book that explores human behavior and the things that never change, even as the world around us changes. Morgan Housel explains how understanding human nature, people's decisions, and their reactions to uncertainty can help us make better choices in life and money.</p>
+            <img class="s" src="ever.jpeg">
+            <br>
+            <br>
+            <button  class="btn"onclick="window.open('Same as Ever PDF.pdf', '_blank')">download book</button>
+        </div>
+        <div class="box">
+            <h2>the Millionaire fastlane</h2>
+            <p>The Millionaire Fastlane is a book about building wealth through entrepreneurship, smart decisions, and creating businesses that can generate income. MJ DeMarco challenges the traditional idea that people should work for decades, save money, and wait until retirement to enjoy life.</p>
+            <img class="s" src="fastlane.jpeg">
+            <br>
+            <br>
+            <button  class="btn"onclick="window.open('Same as Ever PDF.pdf', '_blank')">download book</button>
+        </div>
+        <div class="box">
+            <h2>The richest man in babylon <br></h2>
+            <p>A Brief Overview of The Richest Man in Babylon <br>
+            
+<mark>Author: <a href="https://www.google.com/goto?url=CAESbQHrOzAVdY7ppNmFoNZGt267ki60Yw5hQuVSbJY9PJUwcvUuB-BUA1szF763fGi6juvWOsn6K_j8ReVR8f8PSdBN_GfSu_cZ1OTajDuLLzkMzQNYJzLpOZHRhKfV29UPF9gjxDteVr6zOEwvuAw" target="_blank">George S. Clason</a></mark> <br>
+Genre: Personal Finance, Wealth Building, and Self-Development; <br>
+The Richest Man in Babylon is a classic book about money management and building wealth. Through stories set in ancient Babylon, George S. Clason explains simple financial principles that can help people save money, control their spending, and achieve financial independence.
+            </p></i>
+            <img class="s" src="babl.png">
+            <br>
+            <br>
+            <button  class="btn"onclick="window.open('16-05-2021-070111The-Richest-Man-in-Babylon.pdf', '_blank')">download book</button>
+        </div>
+        <div class="box">
+            <h2>Think and grow rich</h2>
+            <i><p>Think and Grow Rich; <br>
+                <mark>Author: <a href="https://en.wikipedia.org/wiki/Napoleon_Hill" target="_blank">Napoleon Hill</a> </mark>; <br>
+                Genre: Personal Development, Success, and Personal Finance <br>
+                Think and Grow Rich is a famous self-development book that explores the mindset, habits, and principles that can help people achieve success. Napoleon Hill argues that success begins with having a clear goal, believing in your ability to achieve it, and taking consistent action toward it.</p></i>
+            <img class="s" src="think.jpeg">
+            <br>
+            <br>
+            <button  class="btn"onclick="window.open('Think-And-Grow-Rich-Napoleon-Hill.pdf', '_blank')">download book</button>
+        </div>
+        <div class="box">
+            <h2>The millionaire next door</h2>
+            <i> <p>a book by <mark>  Thomas J. Stanley and William D. Danko</mark><br>
+                 the book explores the habits and lifestyles of wealthy people. It explains that many millionaires live modestly, spend wisely, avoid unnecessary luxury, and focus on building long-term wealth rather than showing off their money. The book teaches readers that becoming rich is not just about how much you earn, but also how you manage, save, and invest your money.</p></i>
+            <img class="s" src="the millione.jpeg">
+            <br>
+            <br>
+            <button  class="btn"onclick="window.open('Same as Ever PDF.pdf', '_blank')">download book</button>
+        </div>
+        
+        </div>
+    </body>
+    <hr>
+    <foot class="f">
+       <h2 class="f1">® knowledge library 2026</h2>  
+        <h4 class="f1">all rights reserved</h4>
+    </foot>
+</head>
